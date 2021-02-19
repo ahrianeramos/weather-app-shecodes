@@ -1,0 +1,86 @@
+.container {
+  width: 550px;
+  margin: 25px auto;
+  border: solid 1px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 15px 10px 0px;
+  font-family: Calibri;
+  background: #fafafa;
+  box-shadow: 5px 5px 30px 1px rgba(194, 193, 193, .3);
+}
+
+#row-header {
+  text-align: center;
+}
+
+.form-control {
+  width: 300px;
+}
+
+.btn.btn-primary.mb-1 {
+  background-color: #fafafa;
+  border: none;
+}
+
+.location-header {
+  padding: 10px 20px 0px 15px;
+}
+
+#location {
+  font-size: 2.5em;
+  padding-bottom: 0px;
+  line-height: 1;
+}
+
+#current-temperature {
+  padding: 10px 10px 20px 30px;
+  font-size: 5em;
+}
+
+span.smaller {
+  font-size: medium;
+  position: relative;
+  top: -33px;
+}
+
+#current-temperature-data {
+  padding: 35px 20px 5px 5px;
+  margin-right: 15px;
+  text-align: right;
+  font-size: small;
+}
+
+#temp-projections {
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+}
+
+.days-temp {
+  font-size: 20px;
+  color: rgba(29, 29, 29, .9);
+}
+
+.fas.fa-cloud-sun {
+  font-size: 30px;
+  color: rgba(29, 29, 29, .8);
+}
+
+.far.fa-sun {
+    font-size: 30px;
+    color: rgba(29, 29, 29, .8);
+}
+
+.fas.fa-wind {
+    font-size: 30px;
+    color: rgba(29, 29, 29, .8);
+}
+
+.fas.fa-cloud {
+    font-size: 30px;
+    color: rgba(29, 29, 29, .8);
+}
+
+.fas.fa-smog {
+    font-size: 30px;
+    color: rgba(29, 29, 29, .8);
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Weather App</title>
+  <meta charset="UTF-8" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+  <link rel="stylesheet" href="src/style.css">
+  <script src="https://kit.fontawesome.com/4e6ff3a7b6.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="container">
+      <div class="d-flex justify-content-center" id="row-header">
+        <div class="col-auto">
+          <form class="row g-1" id="search-city">
+            <div class="col-auto">
+              <input 
+                type="text" 
+                class="form-control" 
+                placeholder="Enter City">
+            </div>
+            <div class="col-auto">
+              <button 
+                type="submit" 
+                class="btn btn-primary mb-1">
+                🔎
+              </button>
+
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-primary mb-1">📌</button>
+            </div>
+          </form>
+        </div>  
+      </div>
+
+      <div class="location-header">
+        <div class="col-auto" id="location">
+          San Francisco, CA
+        </div>
+        <p id="current-time">
+          Mon | January 4 | 11:52PM
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-7" id="current-temperature">
+          <i class="fas fa-cloud-moon" id="city-temp"></i> 34 <span class="smaller">&deg;C | &deg;F</span>
+        </div>  
+
+        <div class="col" id="current-temperature-data">
+          Clear <br />
+          55&deg;C | 30&deg;C <br />
+          Feels like 32&deg;C
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center" id="temp-projections">
+        <div class="col">
+          Tuesday
+          <div class="days-temp">
+            39&deg;C
+          </div>
+          <p>
+            <i class="fas fa-cloud-sun"></i>
+          </p>
+        </div>
+        <div class="col">
+          Wednesday
+          <div class="days-temp">
+            45&deg;C
+          </div>
+          <p>
+            <i class="far fa-sun"></i>
+          </p>
+        </div>
+        <div class="col">
+          Thursday
+          <div class="days-temp">
+            38&deg;C
+          </div>
+          <p>
+            <i class="fas fa-wind"></i>
+          </p>
+        </div>
+        <div class="col">
+          Friday
+          <div class="days-temp">
+            35&deg;C
+          </div>
+          <p>
+            <i class="fas fa-cloud"></i>
+          </p>
+        </div>
+        <div class="col">
+          Saturday
+          <div class="days-temp">
+            29&deg;C
+          </div>
+          <p>
+            <i class="fas fa-smog"></i>
+          </p>
+        </div>
+      </div>
+  </div>
+
+  <script src="src/app.js"></script>
+</body>
+</html>
